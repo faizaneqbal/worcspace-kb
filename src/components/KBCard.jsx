@@ -1,6 +1,6 @@
 // KBCard.jsx - Represents a single Knowledge Base card
 
-function KBCard() {
+function KBCard({ title, description, date }) {
   return (
     <div style={{
       border: '1px solid #eee',
@@ -16,7 +16,7 @@ function KBCard() {
         justifyContent: 'space-between',
         marginBottom: '10px'
       }}>
-        <h3>Test</h3>
+        <h3>{title}</h3>
         <span>⋮</span>
       </div>
 
@@ -26,7 +26,7 @@ function KBCard() {
         color: '#666',
         marginBottom: '10px'
       }}>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        {description}
       </p>
 
       {/* Divider */}
@@ -38,7 +38,7 @@ function KBCard() {
         color: '#999',
         marginTop: '10px'
       }}>
-        Created On: 14/07/2025
+        Created On: {date}
       </p>
 
     </div>

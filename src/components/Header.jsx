@@ -1,15 +1,18 @@
 import { FiSearch } from "react-icons/fi"
+import { AiOutlineAppstore } from "react-icons/ai"
+import { FiBell } from "react-icons/fi"
 
 function Header() {
     return (
         <div className="bg-gradient-to-r from-indigo-950 via-indigo-800 to-indigo-950 text-white px-6 py-3 flex items-center justify-between rounded-xl shadow-md">
 
             {/* Left Section */}
-            <div className="flex items-center gap-3">
-                <div className="font-bold text-lg">Workspace</div>
+            <div className="flex items-center gap-2">
+                <AiOutlineAppstore className="text-white text-xl" />
+                <div className="font-bold text-lg">Worcspace</div>
 
-                <select className="bg-indigo-600 text-white text-sm px-2 py-1 rounded">
-                    <option>Workspace 1</option>
+                <select className="bg-indigo-600/70 text-white text-sm px-3 py-1 rounded-full outline-none">
+                    <option>Worcspace 1</option>
                 </select>
             </div>
 
@@ -36,7 +39,7 @@ function Header() {
 
             {/* Right Section */}
             <div className="flex items-center gap-4">
-                <span>🔔</span>
+                <FiBell className="text-white text-lg" />
                 <div className="bg-white text-indigo-700 w-8 h-8 flex items-center justify-center rounded-full font-semibold">
                     GK
                 </div>

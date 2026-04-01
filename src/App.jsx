@@ -7,37 +7,37 @@ import KBCard from './components/KBCard'
 
 function App() {
   const kbData = [
-    {
-      title: "Getting Started",
-      description: "Learn how to begin using the platform efficiently.",
-      date: "12/07/2025"
-    },
-    {
-      title: "API Guide",
-      description: "Understand how to integrate APIs with examples.",
-      date: "10/01/2026"
-    },
-    {
-      title: "Authentication",
-      description: "Steps to implement secure login and access control.",
-      date: "08/02/2026"
-    },
-    {
-      title: "Deployment",
-      description: "Guide to deploy your application smoothly.",
-      date: "25/02/2026"
-    },
-    {
-      title: "Troubleshooting",
-      description: "Common issues and how to fix them.",
-      date: "02/03/2026"
-    },
-    {
-      title: "Best Practices",
-      description: "Tips to write clean and scalable code.",
-      date: "31/03/2026"
-    }
-  ]
+  {
+    title: "Getting Started",
+    description: "Learn how to begin using the platform effectively and efficiently.",
+    date: "12/07/2025"
+  },
+  {
+    title: "API Guide",
+    description: "Understand how to integrate APIs with practical examples and use cases.",
+    date: "10/01/2026"
+  },
+  {
+    title: "Authentication",
+    description: "Implement secure login systems and manage user access control properly.",
+    date: "08/02/2026"
+  },
+  {
+    title: "Deployment",
+    description: "Deploy your application smoothly using best practices and standard tools.",
+    date: "25/02/2026"
+  },
+  {
+    title: "Troubleshooting",
+    description: "Identify common issues and apply effective solutions to resolve them quickly.",
+    date: "02/03/2026"
+  },
+  {
+    title: "Best Practices",
+    description: "Follow clean coding standards and build scalable, maintainable applications.",
+    date: "31/03/2026"
+  }
+]
   return (
     // This div makes Sidebar and main content sit side by side
     <div style={{ display: 'flex', height: '100vh' }}>

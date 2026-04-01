@@ -3,19 +3,29 @@
 
 function Navbar() {
   return (
-    <div style={{
-      padding: '20px',
-      borderBottom: '1px solid #eee',
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center'
-    }}>
+    <div className="flex justify-between items-center px-6 py-4 border-b border-gray-200 bg-white">
       
-      {/* Left side - Title */}
-      <h2>Knowledge Base</h2>
+      {/* Left - Title */}
+      <h2 className="text-xl font-semibold text-gray-800">
+        Knowledge Base
+      </h2>
 
-      {/* Right side - Placeholder for future actions */}
-      <button>Create New</button>
+      {/* Right - Actions */}
+      <div className="flex items-center gap-4">
+        
+        {/* Search Input */}
+        <input
+          type="text"
+          placeholder="Search..."
+          className="border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        />
+
+        {/* Create Button */}
+        <button className="bg-indigo-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-indigo-700 transition">
+          + Create New
+        </button>
+
+      </div>
 
     </div>
   )

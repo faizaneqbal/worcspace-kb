@@ -1,6 +1,7 @@
 import { FiSearch } from "react-icons/fi"
 import { AiOutlineAppstore } from "react-icons/ai"
 import { FiBell } from "react-icons/fi"
+import logo from '../assets/logo.svg'
 
 function Header() {
     return (
@@ -8,7 +9,7 @@ function Header() {
 
             {/* Left Section */}
             <div className="flex items-center gap-2">
-                <AiOutlineAppstore className="text-white text-xl" />
+                <img src={logo} alt="logo" className="w-8 h-8 text-indigo-400" />
                 <div className="font-bold text-lg">Worcspace</div>
 
                 <select className="bg-indigo-600/70 text-white text-sm px-3 py-1 rounded-full outline-none">

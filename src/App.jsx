@@ -5,7 +5,7 @@ import Sidebar from './components/Sidebar'
 import Navbar from './components/Navbar'
 import KBCard from './components/KBCard'
 import CreateKBModal from './components/CreateKBModal'
-
+import Header from './components/Header'
 function App() {
   const kbData = [
     {
@@ -49,15 +49,15 @@ function App() {
   return (
     //This div makes Sidebar and main content sit side by side
     <>
-    
-      <div style={{ display: 'flex', height: '100vh' }}>
+      <Header />
+      <div style={{ display: 'flex', height: 'calc(100vh - 60px)' }}>
 
         {/* Left side - Sidebar */}
         <Sidebar />
 
         {/* Right side - Main content (empty for now) */}
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
-
+          
           {/* Navbar (top) */}
           <Navbar onCreateClick={openModal} />
 

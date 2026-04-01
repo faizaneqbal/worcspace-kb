@@ -44,12 +44,16 @@ function App() {
   const openModal = () => setIsModalOpen(true)
   const closeModal = () => setIsModalOpen(false)
 
-  
+
 
   return (
     //This div makes Sidebar and main content sit side by side
     <>
-      <Header />
+      {/* Header Wrapper (matches Figma spacing) */}
+      <div className="bg-gray-100 px-3 pt-3">
+        <Header />
+      </div>
+      
       <div style={{ display: 'flex', height: 'calc(100vh - 60px)' }}>
 
         {/* Left side - Sidebar */}
@@ -57,7 +61,7 @@ function App() {
 
         {/* Right side - Main content (empty for now) */}
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
-          
+
           {/* Navbar (top) */}
           <Navbar onCreateClick={openModal} />
 

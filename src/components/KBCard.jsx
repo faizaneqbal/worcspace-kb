@@ -2,29 +2,26 @@
 
 function KBCard({ title, description, date }) {
     return (
-        <div className="w-[300px] bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
+        <div className="bg-white border border-gray-200 rounded-lg p-5 w-full flex flex-col justify-between">
 
-            {/* Top section: Title + menu */}
-            <div className="flex justify-between items-start mb-2">
-                <h3 className="text-lg font-semibold text-gray-800">
-                    {title}
-                </h3>
-                <span className="text-gray-400 cursor-pointer">⋮</span>
+            {/* Top Content */}
+            <div>
+                <div className="flex justify-between items-start">
+                    <h3 className="font-semibold text-gray-800">{title}</h3>
+                    <span className="text-gray-400">⋮</span>
+                </div>
+
+                {/* Description (fixed height) */}
+                <p className="text-sm text-gray-600 mt-2 leading-5 min-h-[60px]">
+                    {description}
+                </p>
             </div>
 
-            {/* Description */}
-            <p className="text-sm text-gray-600 mb-3">
-                {description}
-            </p>
-
-            {/* Divider */}
-            <hr className="border-t border-gray-200" />
-
-            {/* Footer */}
-            <p className="text-xs mt-3">
-                <span className="text-gray-600">Created On: </span>
-                <span className="text-gray-800">{date}</span>
-            </p>
+            {/* Bottom Section */}
+            <div className="mt-4">
+                <hr className="mb-3" />
+                <p className="text-xs text-gray-500">Created On: {date}</p>
+            </div>
 
         </div>
     )

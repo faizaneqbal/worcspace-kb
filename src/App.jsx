@@ -10,32 +10,32 @@ function App() {
   const kbData = [
     {
       title: "Getting Started",
-      description: "Learn how to begin using the platform effectively and efficiently.",
+      description: "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
       date: "12/07/2025"
     },
     {
       title: "API Guide",
-      description: "Understand how to integrate APIs with practical examples and use cases.",
+      description: "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
       date: "10/01/2026"
     },
     {
       title: "Authentication",
-      description: "Implement secure login systems and manage user access control properly.",
+      description: "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
       date: "08/02/2026"
     },
     {
       title: "Deployment",
-      description: "Deploy your application smoothly using best practices and standard tools.",
+      description: "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
       date: "25/02/2026"
     },
     {
       title: "Troubleshooting",
-      description: "Identify common issues and apply effective solutions to resolve them quickly.",
+      description: "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
       date: "02/03/2026"
     },
     {
       title: "Best Practices",
-      description: "Follow clean coding standards and build scalable, maintainable applications.",
+      description: "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
       date: "31/03/2026"
     }
   ]
@@ -53,32 +53,76 @@ function App() {
       <div className="bg-gray-100 px-3 pt-3">
         <Header />
       </div>
-      
-      <div style={{ display: 'flex', height: 'calc(100vh - 60px)' }}>
+
+      <div className="flex h-[calc(100vh-60px)]">
 
         {/* Left side - Sidebar */}
         <Sidebar />
 
         {/* Right side - Main content (empty for now) */}
-        <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+        <div className="flex-1 flex flex-col">
 
           {/* Navbar (top) */}
           <Navbar onCreateClick={openModal} />
 
           {/* Main Content (below navbar) */}
-          <div style={{ padding: '20px', display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
+          {/* Main Content */}
+          <div className="p-6 flex-1 flex flex-col">
 
-            {/* Simulating data using array */}
-            {kbData.map((item, index) => (
-              <KBCard
-                key={index}
-                title={item.title}
-                description={item.description}
-                date={item.date}
-              />
-            ))}
+            {/* Cards Container Box */}
+            <div className="bg-white border border-gray-200 rounded-xl p-6">
+
+              {/* Cards Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {kbData.map((item, index) => (
+                  <KBCard
+                    key={index}
+                    title={item.title}
+                    description={item.description}
+                    date={item.date}
+                  />
+                ))}
+              </div>
+
+            </div>
 
           </div>
+
+          {/* ✅ Footer / Pagination (NOW CORRECT POSITION) */}
+          <div className="mt-auto flex items-center justify-between px-6 py-4 text-sm text-gray-600 border-t border-gray-200">
+
+            {/* Left */}
+            <div className="font-medium text-gray-700">6 rows</div>
+
+            {/* Right */}
+            <div className="flex items-center gap-6">
+
+              {/* Rows per page */}
+              <div className="flex items-center gap-2">
+                <span className="font-medium text-gray-700">Rows per page</span>
+                <select className="border border-gray-300 rounded-md px-2 py-1 text-sm bg-white">
+                  <option>10</option>
+                  <option>20</option>
+                </select>
+              </div>
+
+              {/* Page info */}
+              <div className="font-medium text-gray-700">
+                page 1 of 1
+              </div>
+
+              {/* Pagination */}
+              <div className="flex items-center gap-1">
+                <button className="w-8 h-8 flex items-center justify-center border border-gray-300 rounded-md text-gray-400">{'<<'}</button>
+                <button className="w-8 h-8 flex items-center justify-center border border-gray-300 rounded-md text-gray-400">{'<'}</button>
+                <button className="w-8 h-8 flex items-center justify-center border border-gray-300 rounded-md text-gray-400">{'>'}</button>
+                <button className="w-8 h-8 flex items-center justify-center border border-gray-300 rounded-md text-gray-400">{'>>'}</button>
+              </div>
+
+            </div>
+          </div>
+
+
 
         </div>
 

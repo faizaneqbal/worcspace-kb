@@ -1,0 +1,8 @@
+<svg height="107.98" width="136" viewBox="0 0 700 127.41" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+  <!-- Worcspace text, hand-placed to match original style -->
+  <text x="196" y="92" font-family="sans-serif" font-size="72" font-weight="700" letter-spacing="-2" fill="#1e1b4b" style="fill:rgb(30, 27, 75);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;opacity:1;font-family:sans-serif;font-size:72px;font-weight:700;text-anchor:start;dominant-baseline:auto">Worcspace</text>
+
+  <!-- Original icon paths (purple logo mark) -->
+  <path d="M35.235 98.074c-8.683 0-15.73-7.047-15.73-15.73.879-20.85 30.575-20.844 31.46 0 0 8.683-7.063 15.73-15.73 15.73m0-50.965C15.809 47.109 0 62.917 0 82.344c1.933 46.773 68.554 46.743 70.486 0 0-19.427-15.824-35.235-35.251-35.235" fill="#4f46e5" fill-rule="nonzero" style="fill:rgb(79, 70, 229);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <path d="M134.064 113.719l-27.583-.218-51.784-89.726L45.94 38.95 32.22 15.175 40.98.012V0h27.45l65.634 113.719z" fill="#4f46e5" fill-rule="nonzero" style="fill:rgb(79, 70, 229);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+</svg>

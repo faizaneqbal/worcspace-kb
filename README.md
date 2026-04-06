@@ -127,7 +127,11 @@ npm run dev
 
 ## 📸 Screenshots
 
-> Add your final UI screenshots here
+> <img width="1901" height="913" alt="image" src="https://github.com/user-attachments/assets/12dac168-e774-416e-a087-0d82b886e456" />
+
+> <img width="1899" height="912" alt="image" src="https://github.com/user-attachments/assets/b46863e1-b788-4775-8f28-0a951f1cd5ce" />
+
+
 
 ---
 
@@ -143,7 +147,7 @@ npm run dev
 
 ## 👨‍💻 Author
 
-* Developed by: *Your Name*
+* Developed by: *Md Faizan Eqbal*
 * Focus: Frontend UI Engineering
 
 ---
